@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="index.php" method="get">
+        Name: <input type="text" name="name">
+        <input type="submit">
+    </form>
+    <br>
+    Your name is <?php echo $_GET['name'];?>
     <?php
         echo 'Hello World!';
     ?>
