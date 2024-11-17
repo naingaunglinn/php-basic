@@ -11,27 +11,17 @@
         <input type="submit">
     </form> -->
     <form action="index.php" method="post">
-        Password: <input type="password" name="password">
+        <input type="checkbox" name="fruits[]" id="" value="oranges">oranges<br/>
+        <input type="checkbox" name="fruits[]" id="" value="bananas">bananas<br/>
+        <input type="checkbox" name="fruits[]" id="" value="apples">apples<br/>
+        <input type="checkbox" name="fruits[]" id="" value="coconuts">coconuts<br/>
         <input type="submit">
     </form>
     <br>
-    Your name is <?php echo $_POST['password'];?>
     <?php
-        echo 'Hello World!';
+        $fruits = $_POST['fruits'];
+        var_dump($fruits);
     ?>
-    <?php
-        $name = 'Yoon Me Me Aung';
-        echo "Hello $name.";
-    ?>
-    <?php
-        $phrase = "To be or not to be";
-        $age = 10;
-        $gpa = 40.54;
-        $isLove = true;
-        null;
-    ?>
-    <?php
-        echo "NAL ACADEMY "
-    ?>
+    
 </body>
 </html>
