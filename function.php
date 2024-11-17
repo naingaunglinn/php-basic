@@ -12,6 +12,13 @@
         }
 
         sayHello('naingaunglinn');
+
+        function cube($num){
+            return $num * $num * $num;
+        }
+
+        $cubic = cube(6);
+        echo $cubic;  
     ?>
 </body>
 </html>
