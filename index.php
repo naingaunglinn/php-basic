@@ -10,7 +10,7 @@
         Name: <input type="text" name="name">
         <input type="submit">
     </form> -->
-    <form action="index.php" method="post">
+    <!-- <form action="index.php" method="post">
         <input type="checkbox" name="fruits[]" id="" value="oranges">oranges<br/>
         <input type="checkbox" name="fruits[]" id="" value="bananas">bananas<br/>
         <input type="checkbox" name="fruits[]" id="" value="apples">apples<br/>
@@ -19,8 +19,17 @@
     </form>
     <br>
     <?php
-        $fruits = $_POST['fruits'];
-        var_dump($fruits);
+        // $fruits = $_POST['fruits'];
+        // var_dump($fruits);
+    ?> -->
+
+    <?php
+        $isMale = true;
+        if($isMale){
+            echo "He's male";
+        } else {
+            echo "He isn't male";
+        }
     ?>
     
 </body>
