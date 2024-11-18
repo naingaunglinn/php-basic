@@ -18,6 +18,11 @@
         <input type="submit">
     </form>
     <br> -->
+
+    <form action="index.php" method="post">
+        <input type="text" name="grade" id="">
+        <input type="submit">
+    </form>
     <?php
         // $fruits = $_POST['fruits'];
         // var_dump($fruits);
@@ -29,17 +34,37 @@
         //     echo "He isn't male";
         // }
         
-        function getMax($num1, $num2, $num3){
-            if($num1 >= $num2 && $num1 >= $num3){
-                return $num1;
-            } elseif($num2 >= $num2 && $num2 >= $num3){
-                return $num2;
-            } else {
-                return $num3;
-            }
-        }
+        // function getMax($num1, $num2, $num3){
+        //     if($num1 >= $num2 && $num1 >= $num3){
+        //         return $num1;
+        //     } elseif($num2 >= $num2 && $num2 >= $num3){
+        //         return $num2;
+        //     } else {
+        //         return $num3;
+        //     }
+        // }
 
-        echo getMax(3000, 100, 50);
+        // echo getMax(3000, 100, 50);
+
+        $grade = $_POST['grade'];
+
+        switch($grade){
+            case "A+":
+                echo "You are great.";
+                break;
+            case "B":
+                echo "You are good.";
+                break;
+            case "C":
+                echo "You are fine.";
+                break;
+            case "D":
+                echo "You need to study.";
+                break;
+            case "E":
+                echo "I'm sorry you didn't make it.";
+                break;
+        }
     ?>
     
 </body>

@@ -6,14 +6,30 @@
     <title>Calculator</title>
 </head>
 <body>
-    <form action="calculator.php" method="get">
+    <form action="calculator.php" method="post">
         <input type="number" name="number1" id="">
         <br>
+        <input type="text" name="op" id=""><br/>
         <input type="number" name="number2" id="">
         <input type="submit">
     </form>
     Answer: <?php
-        echo $_GET["number1"] + $_GET["number2"];
+        $num1 = $_POST['number1'];
+        $num2 = $_POST['number2'];
+        $op = $_POST['op'];
+        
+        if($op == '+'){
+            echo $num1 + $num2;
+        }elseif($op == '-'){
+            echo $num1 - $num2;
+        }elseif($op == '*'){
+            echo $num1 * $num2;
+        }elseif($op == '/'){
+            echo $num1 / $num2;
+        }else{
+            echo "Invalid Operator!";
+        }
+
     ?>
 </body>
 </html>
