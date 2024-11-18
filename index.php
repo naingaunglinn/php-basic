@@ -17,19 +17,29 @@
         <input type="checkbox" name="fruits[]" id="" value="coconuts">coconuts<br/>
         <input type="submit">
     </form>
-    <br>
+    <br> -->
     <?php
         // $fruits = $_POST['fruits'];
         // var_dump($fruits);
-    ?> -->
-
-    <?php
-        $isMale = true;
-        if($isMale){
-            echo "He's male";
-        } else {
-            echo "He isn't male";
+    
+        // $isMale = true;
+        // if($isMale){
+        //     echo "He's male";
+        // } else {
+        //     echo "He isn't male";
+        // }
+        
+        function getMax($num1, $num2, $num3){
+            if($num1 >= $num2 && $num1 >= $num3){
+                return $num1;
+            } elseif($num2 >= $num2 && $num2 >= $num3){
+                return $num2;
+            } else {
+                return $num3;
+            }
         }
+
+        echo getMax(3000, 100, 50);
     ?>
     
 </body>
