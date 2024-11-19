@@ -19,10 +19,10 @@
     </form>
     <br> -->
 
-    <form action="index.php" method="post">
+    <!-- <form action="index.php" method="post">
         <input type="text" name="grade" id="">
         <input type="submit">
-    </form>
+    </form> -->
     <?php
         // $fruits = $_POST['fruits'];
         // var_dump($fruits);
@@ -46,25 +46,31 @@
 
         // echo getMax(3000, 100, 50);
 
-        $grade = $_POST['grade'];
+        // $grade = $_POST['grade'];
 
-        switch($grade){
-            case "A+":
-                echo "You are great.";
-                break;
-            case "B":
-                echo "You are good.";
-                break;
-            case "C":
-                echo "You are fine.";
-                break;
-            case "D":
-                echo "You need to study.";
-                break;
-            case "E":
-                echo "I'm sorry you didn't make it.";
-                break;
-        }
+        // switch($grade){
+        //     case "A+":
+        //         echo "You are great.";
+        //         break;
+        //     case "B":
+        //         echo "You are good.";
+        //         break;
+        //     case "C":
+        //         echo "You are fine.";
+        //         break;
+        //     case "D":
+        //         echo "You need to study.";
+        //         break;
+        //     case "E":
+        //         echo "I'm sorry you didn't make it.";
+        //         break;
+        // }
+
+        $index = 6;
+        do{            
+            echo $index;
+            $index++;
+        }while($index <= 5)
     ?>
     
 </body>
