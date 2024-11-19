@@ -19,10 +19,10 @@
     </form>
     <br> -->
 
-    <!-- <form action="index.php" method="post">
-        <input type="text" name="grade" id="">
+    <form action="index.php" method="post">
+        <input type="number" name="num" id="">
         <input type="submit">
-    </form> -->
+    </form>
     <?php
         // $fruits = $_POST['fruits'];
         // var_dump($fruits);
@@ -66,11 +66,18 @@
         //         break;
         // }
 
-        $index = 6;
-        do{            
-            echo $index;
-            $index++;
-        }while($index <= 5)
+        // $index = 6;
+        // do{            
+        //     echo $index;
+        //     $index++;
+        // }while($index <= 5)
+        $userInput = $_POST['num'];
+        $luckNumbers = [1,20,35,89,60,2,43,11];
+        for ($i=0; $i < count($luckNumbers); $i++) { 
+            if($userInput == $luckNumbers[$i]){
+                echo "$luckNumbers[$i] is lucky number <br/>";
+            }
+        }
     ?>
     
 </body>
