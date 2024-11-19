@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+<?php
+    include 'header.html'; ?>
     <!-- <form action="index.php" method="get">
         Name: <input type="text" name="name">
         <input type="submit">
@@ -78,6 +80,8 @@
                 echo "$luckNumbers[$i] is lucky number <br/>";
             }
         }
+
+        include 'footer.html';
     ?>
     
 </body>
