@@ -80,6 +80,9 @@
                 echo "$luckNumbers[$i] is lucky number <br/>";
             }
         }
+        include 'useful-tools.php';
+
+        echo mileInFeet(3);
 
         include 'footer.html';
     ?>
